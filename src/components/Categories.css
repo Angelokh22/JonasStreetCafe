@@ -1,0 +1,58 @@
+.categories-elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* allows wrapping if needed */
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.catimg {
+  margin: 0 1rem;
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* smooth transition */
+  cursor: pointer; /* optional for click-like feel */
+}
+
+.catimg:hover {
+  opacity: 0.7; /* makes it a bit transparent */
+  transform: scale(1.05); /* slight zoom for a nicer effect (optional) */
+}
+
+/* Title styling */
+.categoriestitle {
+  text-align: center;
+  margin-bottom: 1.4rem;
+  margin-top: 1.4rem;
+  font-weight: 600;
+  font-style: bold;
+}
+
+/* 📱 Mobile: switch to grid layout */
+@media (max-width: 768px) {
+  .categories-elements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 1rem;
+    justify-items: center; /* center items horizontally */
+  }
+
+  .catimg {
+    width: 120px;
+    height: 120px;
+    margin: 0; /* grid already adds spacing */
+  }
+}
+
+/* 💻 Tablets a bit larger (optional) */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .categories-elements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 per row on tablet */
+    gap: 1.5rem;
+    justify-items: center;
+  }
+}

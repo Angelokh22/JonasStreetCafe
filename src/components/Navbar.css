@@ -1,0 +1,25 @@
+.navbarnavbar-brand {
+    width: 5px;
+    color: #0d8bd1;
+}
+
+.logo {
+    width: 65px;
+    height: 55px;
+    border-radius: 4rem;
+
+}
+.my-navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  position: absolute; /* sit on top of the hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* ensures it stays above the hero image */
+}
+
+.my-navbar .navbar-brand,
+.my-navbar .nav-link {
+  color: white !important; /* make text visible */
+}
