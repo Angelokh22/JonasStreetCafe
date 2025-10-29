@@ -1,5 +1,6 @@
 .hero {
     background-image: url("../../public/img22.jpg");
+     loading:lazy;
       background-size:cover;
      background-position: center;
      background-repeat: no-repeat;

@@ -7,7 +7,7 @@ function About() {
       {/* First Card */}
       <div className="about-card" id="aboutus"> 
             <div className="about-img">
-                <img src="./img10.jpg" alt="Coffee Story" ></img>
+                <img src="./img10.jpg"  loading="lazy" alt="Coffee Story" ></img>
             </div>
         <div className="about-text">
           <h2>Our Story</h2>
@@ -23,7 +23,7 @@ function About() {
       {/* Second Card */}
       <div className="about-card reverse">
         <div className="about-img">
-          <img src="./img12.jpg" alt="Our Passion" />
+          <img src="./img12.jpg" loading="lazy" alt="Our Passion" />
         </div>
         <div className="about-text">
           <h2>Our Passion</h2>
@@ -38,7 +38,7 @@ function About() {
               {/* First Card */}
       <div className="about-card"> 
             <div className="about-img">
-                <img src="./img18.jpg" alt="Coffee Story" ></img>
+                <img src="./img18.jpg" loading="lazy" alt="Coffee Story" ></img>
             </div>
         <div className="about-text">
           <h2>The Taste of Joy, Shared with Every Smile</h2>
